@@ -1,5 +1,5 @@
 import minimist from "minimist"
-import { coinFlip } from "./coin.mjs";
+import { coinFlip } from "./modules/coin.mjs";
 import { coinFlips, countFlips } from "./modules/coin.mjs";
 
 let command= minimist((process.argv.slice(2)))

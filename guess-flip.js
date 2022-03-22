@@ -1,4 +1,4 @@
-import { flipACoin } from "./coin.mjs";
+import { flipACoin } from "./modules/coin.mjs";
 import minimist from 'minimst';
 
 const args=minimist(process.argv.slice(2));
