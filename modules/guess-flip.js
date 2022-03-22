@@ -13,5 +13,5 @@ else if(call!= 'heads'&& call != 'tails'){
 
 }
 else{
-    console.log(flipACoin(args.cal));
+    console.log(flipACoin(args.call));
 }
