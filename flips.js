@@ -2,7 +2,7 @@ import minimist from "minimist"
 import { coinFlip, coinFlips, countFlips } from "./modules/coin.mjs";
 
 const args=minimist(process.argv.slice(2))
-const numflips=args["number"] || 1
+const numflips=args["number"]
 var resultflip=[]
 
 if(numflips!=null){
