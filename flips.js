@@ -2,11 +2,9 @@ import minimist from "minimist"
 import { coinFlip } from "./modules/coin.mjs";
 import { coinFlips, countFlips } from "./modules/coin.mjs";
 
-let command= minimist((process.argv.slice(2)))
-let numflips=command['number']
-if(numflips==undefined){
-    numflips=1
-}
+const command= minimist((process.argv.slice(2)))
+numflips=command["number"];
+const numflips=numflips.number||1;
 let flips=coinFlips(numflips)
 console.log(flips)
 console.log(countFlips(flips))
